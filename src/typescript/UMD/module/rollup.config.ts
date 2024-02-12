@@ -11,7 +11,9 @@ export default {
   input: `${libraryName}.ts`,
   output: [
     { file: `dist/${pkg.main}`, name: libraryName, format: 'umd', exports: 'named', sourcemap: true },
- 		{ file: `dist/${pkg.main}`.replace('umd.js', 'umd.min.js'), name: libraryName, format: 'umd', exports: 'named', sourcemap: true, plugins: [terser()] }
+ 		{ file: `dist/${pkg.main}`.replace('umd.js', 'umd.min.js'), name: libraryName, format: 'umd', exports: 'named', sourcemap: true, plugins: [terser()] },
+    { file: `dist/${pkg.module}`, name: libraryName, format: 'esm', exports: 'named', sourcemap: true },
+ 		{ file: `dist/${pkg.module}`.replace('esm.mjs', 'esm.min.mjs'), name: libraryName, format: 'esm', exports: 'named', sourcemap: true, plugins: [terser()] }
   ],
   // Indicate here external modules you don't wanna include in your bundle (i.e.: 'lodash')
   external: [],

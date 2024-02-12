@@ -1,5 +1,5 @@
 // 📁 main.js
-import { sayHi, sayGoodbye } from '../../module/dist/sayHi.esm.min.mjs';
+const { sayGoodbye, sayHi } = require('./module/dist/sayHi.js');
 
 console.log(sayHi); // function...
 sayHi('John'); // Hello, John!

@@ -1,0 +1,1 @@
+pushd module/ && tsc && popd

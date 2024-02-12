@@ -1,0 +1,1 @@
+pushd module/ && npm install && npm run build && popd

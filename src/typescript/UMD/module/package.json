@@ -5,6 +5,7 @@
   "author": "springcomp@users.noreply.github.com",
   "license": "ISC",
   "main": "sayHi.umd.js",
+  "module": "sayHi.esm.mjs",
   "files": [
     "./"
   ],
@@ -16,6 +17,7 @@
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-terser": "^0.4.0",
     "@rollup/plugin-typescript": "^8.2.1",
+    "@types/node": "^20.11.17",
     "rollup-plugin-typescript2": "^0.34.1"
   }
 }
