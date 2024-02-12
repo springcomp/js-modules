@@ -4,6 +4,10 @@
   "description": "",
   "author": "springcomp@users.noreply.github.com",
   "license": "ISC",
+  "main": "sayHi.umd.js",
+  "files": [
+    "./"
+  ],
   "scripts": {
     "build": "npx rollup -c rollup.config.ts"
   },
