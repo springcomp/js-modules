@@ -1,0 +1,1 @@
+pushd src/ && npm install && npm run build && popd
