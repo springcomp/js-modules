@@ -1,0 +1,11 @@
+{
+	"name": "untyped",
+	"type": "module",
+	"version": "1.0.0",
+	"scripts": {
+		"build": "tsc && npm run copy",
+		"copy": "npm run copy_package_json && npm run copy_sayHi_js",
+		"copy_package_json": "node -e \"require('fs').cpSync('./package.json', '../dist/package.json', {})\"",
+		"copy_sayHi_js": "node -e \"require('fs').cpSync('./sayHi.js', '../dist/sayHi.js', {})\""
+	}
+}
