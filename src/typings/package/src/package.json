@@ -1,0 +1,10 @@
+{
+	"name": "untyped",
+	"type": "module",
+	"version": "1.0.0",
+	"scripts": {
+		"build": "tsc && npm run copy",
+		"copy": "npm run copy_package_json",
+		"copy_package_json": "node -e \"require('fs').cpSync('./package.json', '../dist/package.json', {})\""
+	}
+}
