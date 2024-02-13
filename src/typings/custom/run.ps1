@@ -1,0 +1,1 @@
+pushd dist/ && node index.js && popd
